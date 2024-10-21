@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive design</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Studio Ghibli</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavbar"
+                aria-controls="navbarNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-start" id="navbarNavbar">
+                <form class="mt-3 d-flex ms-lg-auto order-md-2" role="search">
+                    <input class="form-control me-2" type="search" placeholder="search" aria-label="Search">
+                </form>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-column flex-lg-row">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Related books📖</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Quotes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FanArts</a>
+                    </li>
+
+                    <!-- Dropdown para opciones -->
+                    <li class="nav-item dropdown d-lg-none"> <!--oculta el dropdown para lg-->
+                        <a class="nav-link dropdown-toggle" href="#" role="button" id="opcionesDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Opciones
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="opcionesDropdown">
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Hayao Miyazaki</a></li>
+                            <li><a class="dropdown-item" href="#">Isao Takahata</a></li>
+                            <li><a class="dropdown-item" href="#">Gorō Miyazaki</a></li>
+                            <li><a class="dropdown-item" href="#">Hiromasa Yonebayashi</a></li>
+                            <li><a class="dropdown-item" href="#">Hiroyuki Morita</a></li>
+                            <li><a class="dropdown-item" href="#">Yoshifumi Kondō</a></li>
+                            <li><a class="dropdown-item" href="#">Tomomi Mochizuki</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!---Titulo-->
+    <div class="title">
+        <h2>Studio Ghibli movies</h2>
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+            <!--2s de intervalo-->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <h5 class="d-block w-100">
+                        A heart's a heavy burden❤️‍🔥
+                    </h5>
+                </div>
+                <div class="carousel-item">
+                    <h5 class="d-block w-100">
+                        Nothing that happens is ever forgotten, even if you can't remember it🐉
+                    </h5>
+                </div>
+                <div class="carousel-item">
+                    <h5 class="d-block w-100">
+                        To see with eyes unclouded by hate🍃
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 d-none d-lg-block"> <!-- Columna de opciones -->
+                <div class="opciones">Hayao Miyazaki</div>
+                <div class="opciones">Isao Takahata</div>
+                <div class="opciones">Gorō Miyazaki</div>
+                <div class="opciones">Hiromasa Yonebayashi</div>
+                <div class="opciones">Hiroyuki Morita</div>
+                <div class="opciones">Yoshifumi Kondō</div>
+                <div class="opciones">Tomomi Mochizuki</div>
+
+
+            </div>
+
+
+            <!---Columnas-->
+            <div class="col-lg-9"> <!-- columna de la fila con sus elementos a la derecha -->
+                <div class="container text-center">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-4">
+                        <div class="col">
+                            <img src="https://www.movieposters.com/cdn/shop/products/a8b85c5f104c10420a5f047afa176b25_32b3f8ae-0f21-4988-beaf-136078c57251_480x.progressive.jpg?v=1573590478"
+                                class="img-fluid" alt="My Neighbor Totoro">
+                            <p>My Neighbor Totoro</p>
+                        </div>
+                        <div class="col">
+                            <img src="https://www.movieposters.com/cdn/shop/files/spirtedaway.jap.24x36_480x.progressive.jpg?v=1709822795"
+                                class="img-fluid" alt="Spirited Away">
+                            <p>Spirited Away</p>
+                        </div>
+                        <div class="col">
+                            <img src="https://www.movieposters.com/cdn/shop/files/princessmononoke.jap.136669_480x.progressive.jpg?v=1709329542"
+                                class="img-fluid" alt="Princess Mononoke">
+                            <p>Princess Mononoke</p>
+                        </div>
+                        <div class="col">
+                            <img src="https://www.movieposters.com/cdn/shop/files/scan010_66b3c512-9aba-43c5-9810-a2e3ebef1e5f_480x.progressive.jpg?v=1686327383"
+                                class="img-fluid" alt="Howl's Moving Castle">
+                            <p>Howl's Moving Castle</p>
+                        </div>
+                        <div class="col">
+                            <img src="https://www.movieposters.com/cdn/shop/files/scan_c16314a7-8bed-4d61-9ef2-bc6bbcff90f2_480x.progressive.jpg?v=1687292228"
+                                class="img-fluid" alt="Kiki's Delivery Service">
+                            <p>Kiki's Delivery Service</p>
+                        </div>
+                        <div class="col">
+                            <img src="https://www.movieposters.com/cdn/shop/files/scan002_c2af3e08-2e11-406d-9bb2-5d0d322d08c5_480x.progressive.jpg?v=1694795508"
+                                class="img-fluid" alt="Castle in the Sky">
+                            <p>Castle in the Sky</p>
+                        </div>
+                        <div class="col">
+                            <img src="https://i.pinimg.com/736x/96/f2/03/96f2033ac8850577419c34088f93557f.jpg"
+                                class="img-fluid" alt="The Wind Rises">
+                            <p>The Wind Rises</p>
+                        </div>
+                        <div class="col">
+                            <img src="https://funkygraphix.co.uk/cdn/shop/products/WhenMarnieWasThere_2014_1200x1200.jpg?v=1633435734"
+                                class="img-fluid" alt="When Marnie Was There">
+                            <p>When Marnie Was There</p>
+                        </div>
+                        <div class="col">
+                            <img src="https://image.tmdb.org/t/p/original/6taxBGyPs01WxsyjX5TGBh9Wkix.jpg"
+                                class="img-fluid" alt="The Tale of the Princess Kaguya">
+                            <p>The Tale of the Princess Kaguya</p>
+                        </div>
+                        <div class="col">
+                            <img src="https://s3-ap-southeast-2.amazonaws.com/yc.cldmlk.com/gvv6e1yk6h3py01vpfxxwkkc6r/1657915309735_Poster.jpeg"
+                                class="img-fluid" alt="From Up on Poppy Hill">
+                            <p>From Up on Poppy Hill</p>
+                        </div>
+                        <div class="col">
+                            <img src="https://i.ebayimg.com/00/s/MTYwMFgxMDU5/z/SWYAAOSwOwFmr-e0/$_57.JPG?set_id=8800005007"
+                                class="img-fluid" alt="The Secret World of Arrietty">
+                            <p>The Secret World of Arrietty</p>
+                        </div>
+                        <div class="col">
+                            <img src="https://resizing.flixster.com/eNcxbbFFPyfkZXrRCJEgwbVP004=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzQ3MjYzNGI2LTYxYzItNGM5YS04YjAyLTU5YTRjYWJlYjQwZC5qcGc="
+                                class="img-fluid" alt="The Cat Returns">
+                            <p>The Cat Returns</p>
+                        </div>
+                        <div class="col">
+                            <img src="https://www.movieposters.com/cdn/shop/files/gedo_senki_480x.progressive.jpg?v=1706118471"
+                                class="img-fluid" alt="Tales from Earthsea">
+                            <p>Tales from Earthsea</p>
+                        </div>
+                        <div class="col">
+                            <img src="https://filmartgallery.com/cdn/shop/products/Grave-of-the-Fireflies-Vintage-Movie-Poster-Original-Japanese-1-Panel-20x29_600x.jpg?v=1641006087"
+                                class="img-fluid" alt="Grave of the Fireflies">
+                            <p>Grave of the Fireflies</p>
+                        </div>
+                        <div class="col">
+                            <img src="https://www.movieposters.com/cdn/shop/files/nausicaaofthevalleyofthewind.24x36_480x.progressive.jpg?v=1708705937"
+                                class="img-fluid" alt="Nausicaä of the Valley of the Wind">
+                            <p>Nausicaä of the Valley of the Wind</p>
+                        </div>
+                        <div class="col">
+                            <img src="https://image.tmdb.org/t/p/original/rkSE4sWmS9Lwyd16eqikRttkXfZ.jpg"
+                                class="img-fluid" alt="Only Yesterday">
+                            <p>Only Yesterday</p>
+                        </div>
+                        <div class="col">
+                            <img src="https://m.media-amazon.com/images/I/7183wlABRhL._AC_UF894,1000_QL80_.jpg"
+                                class="img-fluid" alt="The Castle of Cagliostro">
+                            <p>The Castle of Cagliostro</p>
+                        </div>
+                        <div class="col">
+                            <img src="https://i.ebayimg.com/images/g/eawAAOSwQOdftm4L/s-l1200.jpg" class="img-fluid"
+                                alt="Whisper of the Heart">
+                            <p>Whisper of the Heart</p>
+                        </div>
+                        <div class="col">
+                            <img src="https://www.movieposters.com/cdn/shop/products/8db411f42b5b5b77bf102dcd147f7157_a29bb4fe-14ff-486d-9a3d-9d8c3873b0e9_480x.progressive.jpg?v=1573585218"
+                                class="img-fluid" alt="Ponyo">
+                            <p>Ponyo</p>
+                        </div>
+                        <div class="col">
+                            <img src="https://www.movieposters.com/cdn/shop/files/image0_4_480x.progressive.jpg?v=1703610404"
+                                class="img-fluid" alt="The Boy and the Heron">
+                            <p>The Boy and the Heron</p>
+                        </div>
+                        <div class="col">
+                            <img src="https://i.ebayimg.com/00/s/MTYwMFgxMDYw/z/xAwAAOSwXuVmrUag/$_57.JPG?set_id=8800005007"
+                                class="img-fluid" alt="The Boy and the Heron">
+                            <p>Pompoko</p>
+                        </div>
+                        <div class="col">
+                            <img src="https://image.tmdb.org/t/p/original/1vZAjTt2RW5mhOsO6K0KnLve612.jpg"
+                                class="img-fluid" alt="The Boy and the Heron">
+                            <p>Ocean weaves</p>
+                        </div>
+                        <div class="col">
+                            <img src="https://m.media-amazon.com/images/I/81pEDoP1EcL._AC_UF894,1000_QL80_.jpg"
+                                class="img-fluid" alt="The Boy and the Heron">
+                            <p>Earwig and the Witch</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
